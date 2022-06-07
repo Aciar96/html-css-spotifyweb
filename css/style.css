@@ -15,17 +15,19 @@ body {
     background-color: #141922;
 }
 
-.minicontainer{
+.minicontainer {
     display: flex;
     flex-wrap: wrap;
     flex-shrink: 0;
-    margin:0 auto;
+    margin: 0 auto;
     margin-left: 85px;
-    
+
 }
-h2{
+
+h2 {
     margin-left: 100px;
 }
+
 /*header*/
 header {
     height: 100px;
@@ -53,7 +55,7 @@ main {
 
 
 
-/* said */ 
+/* said */
 .said {
     height: 91vh;
     width: 80px;
@@ -61,15 +63,22 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    
+
 }
-.icon{
+
+.icon {
     color: #fff;
     display: block;
     text-align: center;
-    margin-top: 5px;
+    margin: 5px;
+    
 }
-.logo{
+span{
+    display: none;
+    color: #fff;
+}
+
+.logo {
     display: none;
 }
 
@@ -88,11 +97,12 @@ li {
     color: aliceblue;
     margin: 5px;
 }
-
+/* main*/
 .img {
     max-width: 100%;
 }
-.gallery{
+
+.gallery {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -100,10 +110,11 @@ li {
     margin-top: 20px;
 
 }
-.card{
+
+.card {
     flex-basis: 50%;
-    padding:15px;
-    margin:10px  -15px;
+    padding: 15px;
+    margin: 10px -15px;
     margin-left: 0px;
 }
 
@@ -115,23 +126,50 @@ footer {
     height: 100px;
     background-color: grey;
 }
+
 @media screen and (min-width:639px) {
-    .said{
+    .said {
         width: 250px;
     }
-    .icon{
-        display: none;   
+
+    .icon {
+        display:inline;
+        text-align: start;
     }
+    .spot{
+        display: none;
+    }
+
     .logo {
         display: block;
     }
-    ul{
+
+    ul {
         margin-left: 250px;
     }
-    li{
+
+    li {
         margin: 10px;
     }
-h2{
-    margin-left: 280px;
-}
+
+    h2 {
+        margin-left: 280px;
+    }
+    span{
+        display: block;
  }
+}
+@media screen and  (min-width:878px) {
+    .gallery{
+        justify-content: flex-start;
+    }
+    .card{
+        flex-basis: 25%;
+    }
+}
+@media  screen and (min-width:1440px) {
+    .card{
+        flex-basis:calc(100% / 6);
+    }
+    
+}

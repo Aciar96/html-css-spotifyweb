@@ -7,6 +7,7 @@
 
 body {
     position: relative;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -20,14 +21,19 @@ body {
     flex-wrap: wrap;
     flex-shrink: 0;
     margin: 0 auto;
-    margin-left: 85px;
+   
 
 }
 
 h2 {
     margin-left: 100px;
 }
-
+h6{
+    color: #fff;
+}
+address{
+    opacity: 0.5;
+}
 /*header*/
 header {
     height: 100px;
@@ -77,13 +83,18 @@ span{
     display: none;
     color: #fff;
 }
+.play{
+    list-style-type: none;
+    color: #fff;
+    margin:5 px ;
+}
 
 .logo {
     display: none;
 }
 
 
-ul {
+.nav{
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
@@ -92,11 +103,12 @@ ul {
     margin-left: 90px;
 }
 
-li {
+.it-nav {
     list-style-type: none;
     color: aliceblue;
     margin: 5px;
 }
+
 /* main*/
 .img {
     max-width: 100%;
@@ -108,6 +120,9 @@ li {
     align-items: stretch;
     text-align: center;
     margin-top: 20px;
+    margin-left: 90px;
+
+
 
 }
 
@@ -116,8 +131,11 @@ li {
     padding: 15px;
     margin: 10px -15px;
     margin-left: 0px;
+    color:#fff ;
 }
-
+ .text{
+     padding: 10px;
+ }
 
 
 
@@ -144,11 +162,11 @@ footer {
         display: block;
     }
 
-    ul {
+    .nav , .gallery {
         margin-left: 250px;
     }
 
-    li {
+    .it-nav {
         margin: 10px;
     }
 
@@ -156,7 +174,7 @@ footer {
         margin-left: 280px;
     }
     span{
-        display: block;
+        display: inline-block;
  }
 }
 @media screen and  (min-width:878px) {

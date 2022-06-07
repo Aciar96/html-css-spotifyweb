@@ -21,12 +21,12 @@ body {
     flex-wrap: wrap;
     flex-shrink: 0;
     margin: 0 auto;
-   
-
+  
 }
 
 h2 {
     margin-left: 100px;
+    color: #fff;
 }
 h6{
     color: #fff;
@@ -86,7 +86,8 @@ span{
 .play{
     list-style-type: none;
     color: #fff;
-    margin:5 px ;
+    margin-left:20px;
+    margin: 5px;
 }
 
 .logo {
@@ -107,6 +108,12 @@ span{
     list-style-type: none;
     color: aliceblue;
     margin: 5px;
+}
+.list-play{
+    display: none;
+    max-height: 200px;
+    overflow-y: auto;
+    
 }
 
 /* main*/
@@ -131,7 +138,9 @@ span{
     padding: 15px;
     margin: 10px -15px;
     margin-left: 0px;
-    color:#fff ;
+    list-style-type: none;
+    color: aliceblue;
+    
 }
  .text{
      padding: 10px;
@@ -165,7 +174,9 @@ footer {
     .nav , .gallery {
         margin-left: 250px;
     }
-
+    .list-play{
+        display:block;
+    }
     .it-nav {
         margin: 10px;
     }
